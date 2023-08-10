@@ -4,7 +4,7 @@
 
 ## Second semester
 
-- [Data Structures]()
+- [Data Structures](https://github.com/RaphaelAzambuja/2SemesterADS/tree/main/2-SecondSemester/DataStructures)
 - [Object-Oriented Programming]()
 - [Data Base Management System]()
 - [Web Development]()
