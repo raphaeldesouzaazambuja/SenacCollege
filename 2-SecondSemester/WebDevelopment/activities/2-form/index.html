@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Person registration</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <input type="button" value="Save" onclick="save()">
+        </fieldset>
+    </form>
+
+    <script>
+        function save()
+        {
+            let name = document.getElementById("name").value;
+            alert("The typed name is " + name);
+        }
+    </script>
+</body>
+</html>
