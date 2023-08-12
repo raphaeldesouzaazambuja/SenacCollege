@@ -12,11 +12,13 @@ public class Question4
 
         for(int i = 0; i < 5; i++)
         {
-            System.out.println("Type the Number");
-            System.out.println(num = scan.nextInt());
-
+            System.out.print("Type a Number\n-> ");
+            num = scan.nextInt();
+            
             A.add(num);
         }
+
+        scan.close();
 
         for(int i = 0; i < 5; i++)
         {
@@ -24,7 +26,7 @@ public class Question4
             {
                 System.out.println("The number is "+ A.get(i));
                 validate = 1;
-                i = 5;
+                break;
             }
             else
             {
@@ -36,7 +38,5 @@ public class Question4
         {
             System.out.println("Dont have a negative numbers");
         }
-
-        scan.close();
     }
 }
