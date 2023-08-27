@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/register.css">
+  <script src="../script/register.js" defer></script>
+
+  <title>Register</title>
+</head>
+<body>
+  <main>
+    <div class="content-box">
+      
+      <h2>New user</h2>
+      
+      <div class="inputs-box">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="name" required>
+        
+        <label for="login">Log-in</label>
+        <input type="text" name="login" class="login" required>
+        
+        <label for="email">E-mail</label>
+        <input type="email" name="email" class="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" class="password" required>
+      </div>
+      
+      <div class="buttons-box">
+        <input type="button" class="back" value="Back">
+        <input type="button" class="save" value="Save">
+      </div>
+
+      <p class="alert">User successfully saved failed to register user</p>
+    </div>
+  </main>
+</body>
+</html>

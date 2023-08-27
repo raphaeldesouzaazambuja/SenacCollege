@@ -1,0 +1,104 @@
+:root{
+  --color-red: #F03136;
+  --color-green: #2FAA4B;
+  --color-white: #ffffff;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  border-bottom: 1px solid;
+}
+
+.content-box{
+  height: 450px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputs-box{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputs-box > input{
+  height: 15px;
+  width: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.buttons-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-box > input {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+}
+
+.buttons-box > input:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.buttons-box>input:active {
+  transform: scale(1.05);
+}
+
+.buttons-box>.back {
+  background: var(--color-red);
+  border: none;
+  color: white;
+}
+
+.buttons-box>.save {
+  background: var(--color-green);
+  border: none;
+  color: white;
+}
+
+.alert{
+  width: 100%;
+  padding: 20px 5px 20px 5px;
+  border-radius: 17px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.success{
+  display: flex;
+  color: var(--color-white);
+  background: var(--color-green);
+  font-size: 18px;
+}
+
+.error {
+  display: flex;
+  color: var(--color-white);
+  background: var(--color-red);
+  font-size: 18px;
+}
