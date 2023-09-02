@@ -15,54 +15,60 @@
 body {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-box {
+  width: 500px;
+  border: solid 1px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
   align-items: center;
   padding: 20px;
 }
 
 .list-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 10px 10px 0px 10px;
   background-color: var(--color-60);
   border-radius: 7px;
   box-shadow: 0px 0px 5px #0000001f;
 }
 
-.list-box table {
+.list-box>table {
   width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  /* Adiciona rolagem horizontal */
   border-collapse: collapse;
   margin-top: 10px;
 }
 
 .list-box th,
 .list-box td {
+  width: auto;
+  /* Ajuste a largura das colunas automaticamente */
   padding: 10px;
   text-align: center;
   border-bottom: 1px solid #ddd;
-}
-
-.list-box th {
-  font-weight: bold;
-  background-color: #f0f0f0;
 }
 
 .list-box td button {
   background-color: var(--color-red);
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 8px;
+  /* Reduza um pouco o padding dos botões */
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.list-box td button:hover {
-  background-color: var(--color-red);
 }
 
 .list-box td i {

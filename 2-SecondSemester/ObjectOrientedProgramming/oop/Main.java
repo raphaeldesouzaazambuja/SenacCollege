@@ -40,7 +40,7 @@ public class Main
         disciplinas.put("Matematica", notasMatematica);
         disciplinas.put("Portugues", notasPortugues);
 
-        aluno01.disciplinasNotas = disciplinas;
+        Aluno.disciplinasNotas = disciplinas;
         
         Aluno.calcularMediaFinal();
     }

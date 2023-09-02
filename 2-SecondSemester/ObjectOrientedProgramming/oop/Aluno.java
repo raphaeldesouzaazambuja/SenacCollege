@@ -46,10 +46,26 @@ public class Aluno
         }
     }
 
-    public static void calcularMediaFinal()
+    public static void calcularMediaFinal() 
     {
-        Aluno.calcularMedia();
+        double totalMedia = 0.0;
+        int numDisciplinas = disciplinasNotas.size();
+    
+        for (List<Integer> notas : disciplinasNotas.values()) 
+        {
+            int somaNotas = 0;
+            for (Integer nota : notas) 
+            {
+                somaNotas += nota;
+            }
 
-        Integer media = 
+            double mediaDisciplina = (double) somaNotas / notas.size();
+            totalMedia += mediaDisciplina;
+        }
+    
+        double mediaFinal = totalMedia / numDisciplinas;
+        
+        System.out.println("Média Final: " + mediaFinal);
     }
+    
 }
